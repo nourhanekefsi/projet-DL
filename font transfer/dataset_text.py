@@ -14,13 +14,11 @@ def generate_random_texts(num_texts=1500, min_length=5, max_length=25):
     return texts
 
 def filter_unsupported_characters(text, font_path):
-    """Filtre les caractères non pris en charge par une police."""
     font = ImageFont.truetype(font_path, 40)
     supported_text = "".join([char for char in text if font.getbbox(char)[2] > 0])
     return supported_text
 
 def wrap_text(text, font, max_width):
-    """Divise le texte en plusieurs lignes pour qu'il tienne dans l'image."""
     lines = []
     words = text.split()
     current_line = words[0]
@@ -37,7 +35,6 @@ def wrap_text(text, font, max_width):
     return "\n".join(lines)
 
 def generate_text_image(paragraph, font_path, IMAGE_SIZE):
-    """Génère une image avec un paragraphe rendu dans une police spécifique."""
     font_size = 20
     font = ImageFont.truetype(font_path, font_size)
     max_width = IMAGE_SIZE[0] - 40
@@ -61,7 +58,6 @@ def generate_text_image(paragraph, font_path, IMAGE_SIZE):
     return img
 
 def generate_dataset(FONT_DIR, output_dir, IMAGE_SIZE):
-    """Génère un dataset avec des images pour les paires de polices."""
     fontA, fontB = os.path.join(FONT_DIR, 'arial.ttf'), os.path.join(FONT_DIR, 'calibri.ttf')
     os.makedirs(output_dir, exist_ok=True)
     paired_data_dir = os.path.join(output_dir, "pairs")
