@@ -2,7 +2,7 @@
 Read report here: [View the full PDF](./REPORT.pdf)
 
 ## Example of generated music
-[🎵](./music%20generation/mel.mid)
+[🎵....](./music%20generation/mel.mp3)
 
 ## Duo classifier cGAN results 
 ![duo classifier cGAN](./imgs/DUO_RESULT.png)
