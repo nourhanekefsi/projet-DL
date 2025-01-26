@@ -1,5 +1,5 @@
 
-Read report here: [View the full PDF](./main/REPORT.pdf)
+Read report here: [View the full PDF](./REPORT.pdf)
 
 ## Duo classifier cGAN results 
 ![duo classifier cGAN](./imgs/DUO_RESULT.png)
