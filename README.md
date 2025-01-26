@@ -1,5 +1,5 @@
 
-Read report here: [View the full PDF](./REPORT.pdf)
+Read report here: [View the full PDF](./https://github.com/nourhanekefsi/projet-DL/blob/main/REPORT.pdf)
 
 ## Duo classifier cGAN results 
 ![duo classifier cGAN](./imgs/DUO_RESULT.png)
