@@ -1,6 +1,11 @@
 
 Read report here: [View the full PDF](./REPORT.pdf)
 
+## Generated music
+<audio controls>
+  <source src="./music%20generation/mel.mp3" type="audio/mpeg">
+</audio>
+
 ## Duo classifier cGAN results 
 ![duo classifier cGAN](./imgs/DUO_RESULT.png)
 
